@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .header {
 	display: flex;
 	flex-direction: row;
@@ -7,7 +9,7 @@
 }
 
 .brand {
-	font: 100 24px 'Kontora';
+	font: 100 24px $font-family;
 }
 
 .menu {
@@ -30,7 +32,7 @@
 
 	color: #a7a7a7;
 
-	font: 18px 'Kontora';
+	font: 18px $font-family;
 
 	text-decoration: none;
 
