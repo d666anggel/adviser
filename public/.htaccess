@@ -1069,23 +1069,16 @@ FileETag None
 # </IfModule>
 
 # ----------------------------------------------------------------------
-# Прячем index
+# React
 # ----------------------------------------------------------------------
 <IfModule mod_rewrite.c>
+
   RewriteEngine On
   RewriteBase /
-  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
-  RewriteRule ^index\.php$ http://%{HTTP_HOST}/$1 [R=301,L]
-</IfModule>
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-  RewriteRule ^index\.html$ http://%{HTTP_HOST}/$1 [R=301,L]
-</IfModule>
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\ HTTP/
-  RewriteRule ^index$ http://%{HTTP_HOST}/$1 [R=301,L]
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
 </IfModule>
