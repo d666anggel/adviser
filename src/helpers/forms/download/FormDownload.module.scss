@@ -1,0 +1,97 @@
+@import '../../../variables';
+
+.formControl,
+.submitButton {
+	box-sizing: border-box;
+	width: 270px;
+	height: 50px;
+	margin: auto;
+
+	border: none;
+	border-radius: $global_border_radius;
+}
+
+.formCenter {
+	text-align: center;
+}
+
+.formBlock {
+	position: relative;
+}
+
+.formControl {
+	margin-top: 21px;
+	padding: 0 24px;
+	color: #a7a7a7;
+	background: #f6f7fb;
+	box-shadow: inset 3px 3px 10px rgba(215, 215, 215, .55);
+
+	font-family: 'Kontora';
+	font-size: 18px;
+
+	font-weight: normal;
+	font-style: normal;
+	line-height: 18px;
+}
+
+.submitButton {
+	margin-top: 35px;
+	color: #fff;
+	background: linear-gradient(180deg, #fb7bc3 0%, #df44db 100%), #c4c4c4;
+	box-shadow: 3px 3px 12px rgba(225, 72, 217, .6);
+	font-family: 'Kontora';
+
+	font-size: 18px;
+
+	font-weight: bold;
+
+	font-style: normal;
+	line-height: 24px;
+	cursor: pointer;
+}
+
+.errorBlock {
+	input {
+		box-shadow: 0 0 10px rgba(#df44db, .55);
+	}
+
+	span {
+		display: flex;
+
+		position: absolute;
+		z-index: 99;
+		top: 0;
+		left: -304px;
+
+		width: 270px;
+		height: 50px;
+
+		margin-top: 21px;
+		padding-left: 15px;
+		border: 1px solid #d4d4d5;
+		border-radius: 25px 0 0 25px;
+
+		color: rgba(0, 0, 0, .87);
+		background: #fff;
+		box-shadow: 0 2px 4px 0 rgba(34, 36, 38, .12), 0 2px 10px 0 rgba(34, 36, 38, .15);
+		font-size: 12px;
+		align-items: center;
+
+		&::before {
+			display: block;
+			position: absolute;
+			z-index: 998;
+
+			right: -10px;
+
+			width: 20px;
+			height: 20px;
+
+			background: #fff;
+			box-shadow: 1px 1px 0 0 #bababc;
+
+			content: '';
+			transform: rotate(315deg);
+		}
+	}
+}

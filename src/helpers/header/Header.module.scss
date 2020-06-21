@@ -1,0 +1,50 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	height: 98px;
+
+	align-items: center;
+}
+
+.brand {
+	font: 100 24px 'Kontora';
+}
+
+.menu {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+.menuItems {
+	display: inline-flex;
+	list-style: none;
+
+	justify-content: flex-end;
+}
+
+.menuItem {
+	display: flex;
+
+	margin-left: 53px;
+
+	color: #a7a7a7;
+
+	font: 18px 'Kontora';
+
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		cursor: pointer;
+	}
+}
+
+.menuItemActive {
+	color: #df44db;
+	background: -webkit-linear-gradient(90deg, #df44db 0%, #fa7ac3 100%);
+	-webkit-background-clip: text;
+
+	-webkit-text-fill-color: transparent;
+}

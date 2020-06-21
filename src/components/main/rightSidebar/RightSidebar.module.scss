@@ -1,0 +1,59 @@
+@import '../../../variables';
+
+.rightSidebar_container {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+}
+
+.rightSidebar {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+
+	width: 476px;
+	padding: 13px;
+	border-radius: $global_border_radius;
+
+	background: #c7ecff;
+	justify-content: flex-end;
+}
+
+.rightSidebar_image {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: -53px;
+	margin-bottom: auto;
+}
+
+.rightSidebar_graphic {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 32px 28px;
+
+	border-radius: 20px;
+	background: #fff;
+}
+
+.rightSidebar_graphic_head {
+	display: flex;
+	flex-direction: row;
+
+	color: #c5c5c5;
+	font-size: 18px;
+
+	line-height: 18px;
+}
+
+.rightSidebar_graphic_month {
+	flex-grow: 1;
+}
+
+.rightSidebar_graphic_year {
+	align-self: flex-end;
+}
+
+.rightSidebar_graphic_img {
+	width: 100%;
+	padding: 43px 0 20px;
+}

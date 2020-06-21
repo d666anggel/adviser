@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Kontora';
+    src: url('Kontora-Bold.eot');
+    src: url('Kontora-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Kontora-Bold.woff2') format('woff2'),
+        url('Kontora-Bold.woff') format('woff'),
+        url('Kontora-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kontora';
+    src: url('Kontora-Thin.eot');
+    src: url('Kontora-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Kontora-Thin.woff2') format('woff2'),
+        url('Kontora-Thin.woff') format('woff'),
+        url('Kontora-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kontora';
+    src: url('Kontora-Regular.eot');
+    src: url('Kontora-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Kontora-Regular.woff2') format('woff2'),
+        url('Kontora-Regular.woff') format('woff'),
+        url('Kontora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

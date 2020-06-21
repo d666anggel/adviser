@@ -1,0 +1,110 @@
+@import-normalize ; // Default for react-app css styles reseter
+@import './_variables';
+
+// Global
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+
+	background: #fff;
+	font-family: 'Kontora';
+
+	font-weight: normal;
+
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+
+	flex: auto;
+
+	&.blured {
+		#dark {
+			background: rgba(4, 4, 4, .35);
+
+			pointer-events: all;
+		}
+	}
+}
+
+#root {
+	display: flex;
+	flex: auto;
+}
+
+#dark {
+	display: block;
+	position: absolute;
+	z-index: $zIndexForms - 1;
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(4, 4, 4, 0);
+	transition: all .5s ease-in;
+
+	pointer-events: none;
+}
+
+// Typography
+.strong {
+	font-weight: bold;
+}
+
+.h1,
+.h2 {
+	margin: 0;
+	color: #242424;
+	font-family: 'Kontora';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.h1 {
+	min-height: 2*$h1FontSize;
+	font-size: $h1FontSize;
+	line-height: $h1FontSize;
+}
+
+.h2 {
+	font-size: $h2FontSize;
+	line-height: $h2FontSize;
+}
+
+.subHeader {
+	margin-top: 47px;
+}
+
+// Spinner
+.donut {
+	display: inline-block;
+	display: flex;
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	border-left-color: #7983ff;
+	border-radius: 50%;
+	animation: donut-spin 1.2s linear infinite;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+@keyframes donut-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+// Other

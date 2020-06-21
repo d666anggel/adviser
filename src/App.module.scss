@@ -1,0 +1,10 @@
+@import './_variables';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 0 81px 0 40px;
+	border-radius: $global_border_radius 0 0 $global_border_radius;
+	background-color: #F6F7FB;
+	flex: 1 0 $sidebar_width;
+}

@@ -1,0 +1,164 @@
+@import '../../variables';
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 1;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+
+	width: 1042px;
+}
+
+.content_row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column_info,
+.column_gift {
+	.mediaBlock {
+		box-sizing: border-box;
+		min-height: 262px;
+		margin-top: 23px;
+	}
+}
+
+.column_info {
+	width: 505px;
+	margin-top: 42px;
+
+	.mediaBlock {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.blockDownload {
+	z-index: $zIndexForms;
+
+	.mediaBlock_image {
+		margin-right: auto;
+	}
+}
+
+.mediaBlock_row {
+	display: inline-flex;
+	flex-direction: row;
+	width: 100%;
+
+	align-items: center;
+}
+
+.mediaBlock_info__icons {
+	margin: 14px 34px 22px 20px;
+
+	text-align: center;
+}
+
+.mediaBlock_info__desc {
+	display: flex;
+	box-sizing: border-box;
+
+	height: 70px;
+	padding: 19px 37px;
+	border-radius: 20px;
+
+	background: #e5f6ff;
+	font-size: 18px;
+	line-height: 18px;
+
+	align-items: center;
+	flex-grow: 1;
+}
+
+.mediaBlock_infoRefresh {
+	border: 1px solid #d3c2ff;
+	background: #f2eefc;
+}
+
+.mediaBlock_infoCash {
+	background: #e6fff9;
+}
+
+.column_gift {
+	width: 472px;
+	margin-top: 42px;
+	margin-left: 66px;
+
+	.mediaBlock_image {
+		width: 210px;
+
+		box-shadow: none;
+	}
+
+	&_counter {
+		width: 218px;
+		height: 239px;
+
+		border-radius: 20px;
+		background: rgba(224, 215, 248, .44);
+	}
+
+	&_days {
+		color: #242424;
+		font-family: 'Kontora';
+		font-size: 96px;
+
+		line-height: 156px;
+
+		text-align: center;
+	}
+
+	&_desc {
+		font-size: 18px;
+		line-height: 20px;
+
+		text-align: center;
+	}
+}
+
+.mediaBlock_header {
+	color: #a7a7a7;
+	font-family: Kontora;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+
+	line-height: 18px;
+}
+
+.mediaBlock {
+	display: flex;
+	flex-direction: row;
+	margin-top: 44px;
+
+	padding: 13px;
+	border-radius: $global_border_radius;
+
+	background: #fff;
+	align-items: center;
+}
+
+.mediaBlock_half {
+	display: flex;
+	width: 50%;
+	height: 100%;
+
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.mediaBlock_image {
+	display: flex;
+
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	border-radius: 20px;
+	box-shadow: 15px 15px 31px rgba(145, 145, 145, .25);
+}
